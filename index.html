@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class X English - Unit 1: Complete Textbook Notes, Exercises & Answers (Bilingual)</title>
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #3182ce;
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --text-color: #2d3748;
+            --border-radius: 8px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .ribbon-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .dropbtn:hover {
+            background-color: var(--accent-color);
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: var(--card-bg);
+            min-width: 280px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: var(--border-radius);
+            overflow-y: auto;
+            max-height: 400px;
+        }
+
+        .dropdown-content a {
+            color: var(--text-color);
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            border-bottom: 1px solid #edf2f7;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ebf8ff;
+            color: var(--secondary-color);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .english-text {
+            font-size: 1.05rem;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .translate-btn {
+            background-color: #e2e8f0;
+            color: #4a5568;
+            border: none;
+            padding: 8px 14px;
+            font-size: 0.9rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .translate-btn:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .telugu-box {
+            display: none;
+            background-color: #f0fff4;
+            border: 1px dashed #38a169;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+            color: #22543d;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .telugu-box.show {
+            display: block;
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        th, td {
+            border: 1px solid #cbd5e0;
+            padding: 10px;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: #edf2f7;
+            color: var(--primary-color);
+        }
+
+        #topBtn {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        #topBtn:hover {
+            background-color: var(--primary-color);
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Index Ribbon & Dropdown Menu -->
+    <header>
+        <div class="ribbon-container">
+            <div class="logo">Unit 1: Personality Development Notes</div>
+            <div class="dropdown">
+                <button class="dropbtn">Jump to Section ▼</button>
+                <div class="dropdown-content">
+                    <a href="#summary">1. Key Points Summary</a>
+                    <a href="#shortdesc">2. Lesson Short Description</a>
+                    <a href="#vocabulary">3. Key Terms & Words</a>
+                    <a href="#qa">4. Comprehension Q & A</a>
+                    <a href="#attributes">5. Nick's Attributes Table</a>
+                    <a href="#grammar">6. Grammar & Relative Clauses</a>
+                    <a href="#writing">7. Writing: Stephen Hawking</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- Summary Section -->
+        <div id="summary" class="card">
+            <h2>1. Key Points Summary (Pages 1 to 12)</h2>
+            <div class="english-text">
+                Unit 1 focuses on Personality Development, featuring stories of resilience, overcoming physical or circumstantial hurdles, and maintaining a positive attitude despite severe challenges[cite: 1]. It features Nick Vujicic, who was born without limbs yet conquered his condition through perseverance[cite: 1].
+            </div>
+            <button class="translate-btn" onclick="toggleTranslation('tel-sum', this)">తెలుగు అనువాదం చూడండి (Show Telugu Translation)</button>
+            <div id="tel-sum" class="telugu-box">
+                <strong>తెలుగు భావము:</strong> యూనిట్ 1 వ్యక్తిత్వ వికాసంపై దృష్టి పెడుతుంది, ఇందులో స్థితిస్థాపకత, శారీరక లేదా పరిస్థితులపరమైన అడ్డంకులను అధిగమించడం మరియు తీవ్రమైన సవాళ్లు ఎదురైనప్పటికీ సానుకూల వైఖరిని కొనసాగించడం వంటి కథనాలు ఉన్నాయి[cite: 1]. అవయవాలు లేకుండా జన్మించినప్పటికీ పట్టుదలతో తన స్థితిని జయించిన నిక్ వుజిసిక్ కథ ఇందులో ప్రధానమైనది[cite: 1].<br><br>
+                <strong>ముఖ్యమైన పదాలు (Key Words & Meanings):</strong>
+                <ul>
+                    <li><strong>Resilience (స్థితిస్థాపకత):</strong> కష్టాల నుండి త్వరగా కోలుకునే శక్తి.</li>
+                    <li><strong>Circumstantial (పరిస్థితులపరమైన):</strong> సమయానికి తగిన పరిస్థితులు.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Short Description Section -->
+        <div id="shortdesc" class="card">
+            <h2>2. Lesson Short Description & Main Important Points</h2>
+            <div class="english-text">
+                The lesson 'Attitude Is Altitude' details Nick Vujicic’s life, demonstrating that a person's mindset dictates their altitude in life. Born with Phocomelia, Nick mastered independent living, sports, and became a global motivational speaker[cite: 1].
+            </div>
+            <button class="translate-btn" onclick="toggleTranslation('tel-desc', this)">తెలుగు అనువాదం చూడండి (Show Telugu Translation)</button>
+            <div id="tel-desc" class="telugu-box">
+                <strong>తెలుగు భావము:</strong> 'ఆటిట్యూడ్ ఈజ్ ఆల్టిట్యూడ్' పాఠం నిక్ వుజిసిక్ జీవితాన్ని వివరంగా వివరిస్తుంది, మనిషి యొక్క మానసిక దృక్పథమే అతని జీవితంలో ఉన్నత స్థాయిని నిర్ణయిస్తుందని ఇది నిరూపిస్తుంది. ఫోకోమెలియాతో జన్మించిన నిక్, స్వతంత్ర జీవితాన్ని, క్రీడలను నేర్చుకుని ప్రపంచ ప్రసిద్ధ ప్రేరణాత్మక వక్తగా మారాడు[cite: 1].<br><br>
+                <strong>ముఖ్యమైన పదాలు (Key Words & Meanings):</strong>
+                <ul>
+                    <li><strong>Mindset (మానసిక దృక్పథం):</strong> ఆలోచనా విధానం.</li>
+                    <li><strong>Motivational Speaker (ప్రేరణాత్మక వక్త):</strong> ఇతరులలో ఉత్సాహం నింపే వక్త.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Key Words Section -->
+        <div id="vocabulary" class="card">
+            <h2>3. Key Terms & Words with Explanations</h2>
+            <div class="english-text">
+                Important glossary terms from the text: Phocomelia, Torso, Adversity, Perseverance, Distraught, and Convictions[cite: 1].
+            </div>
+            <button class="translate-btn" onclick="toggleTranslation('tel-vocab', this)">తెలుగు అనువాదం చూడండి (Show Telugu Translation)</button>
+            <div id="tel-vocab" class="telugu-box">
+                <strong>తెలుగు భావము:</strong> పాఠంలోని ముఖ్యమైన పదజాల నిబంధనలు: ఫోకోమెలియా, మొండెం, ప్రతికూలత, పట్టుదల, తీవ్ర ఆందోళన మరియు గట్టి నమ్మకాలు[cite: 1].<br><br>
+                <strong>వివరణాత్మక అర్థాలు (Detailed Explanations):</strong>
+                <ul>
+                    <li><strong>Phocomelia (ఫోకోమెలియా):</strong> A rare congenital condition where limbs are absent or malformed (చేతులు, కాళ్లు సరిగా అభివృద్ధి చెందకుండా లేదా అసలు లేకుండా పుట్టే అరుదైన పరిస్థితి)[cite: 1].</li>
+                    <li><strong>Torso (మొండెం):</strong> The main part of the human body, excluding the head, arms, and legs (తల, చేతులు, కాళ్లు మినహాయించి శరీరం యొక్క ప్రధాన భాగం)[cite: 1].</li>
+                    <li><strong>Adversity (ప్రతికూలత / కష్టాలు):</strong> A difficult or unpleasant situation (జీవితంలో ఎదురయ్యే క్లిష్టమైన లేదా అసహ్యకరమైన పరిస్థితులు)[cite: 1].</li>
+                    <li><strong>Perseverance (పట్టుదల):</strong> Continuing to try despite difficulties (ఎన్ని ఇబ్బందులు ఎదురైనా లక్ష్యం కోసం నిరంతరం ప్రయత్నించడం)[cite: 1].</li>
+                    <li><strong>Distraught (తీవ్ర ఆందోళన చెင်ದిన):</strong> Deeply upset and agitated (మనశ్శాంతి కోల్పోయి అత్యంత బాధకు గురవడం)[cite: 1].</li>
+                    <li><strong>Convictions (గట్టి నమ్మకాలు):</strong> Firmly held beliefs (మనస్ఫూర్తిగా నమ్మే సిద్ధాంతాలు లేదా అభిప్రాయాలు)[cite: 1].</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Comprehension Q & A Section -->
+        <div id="qa" class="card">
+            <h2>4. Textbook Comprehension Questions & Answers (Page 7)</h2>
+            <div class="english-text">
+                1. 'I call it my chicken drumstick,' joked Nick. What does 'it' refer to? How does it help him?<br>
+                <strong>Answer:</strong> 'It' refers to the small foot on Nick's left hip[cite: 1]. It helps him maintain balance, kick, type, write with a pen, and pick up objects[cite: 1].
+            </div>
+            <div class="english-text">
+                2. What do you mean by ‘right girl/boy’ to marry?<br>
+                <strong>Answer:</strong> It refers to an ideal life partner who shares compatible values, offers mutual respect, and accepts a person unconditionally.
+            </div>
+            <div class="english-text">
+                3. How did Nick's parents help him to become independent?<br>
+                <strong>Answer:</strong> His father taught him to swim at 18 months and typing at age six[cite: 1]. His mother invented a special plastic device to help him hold a pen[cite: 1], and they insisted on mainstream schooling[cite: 1].
+            </div>
+            <button class="translate-btn" onclick="toggleTranslation('tel-qa', this)">తెలుగు అనువాదం చూడండి (Show Telugu Translation)</button>
+            <div id="tel-qa" class="telugu-box">
+                <strong>తెలుగు భావము (ప్రశ్నలు & సమాధానాలు):</strong><br>
+                1. 'దీనిని నేను చికెన్ డ్రమ్‌స్టిక్ అంటాను' అన్నాడు నిక్. 'ఇది' దేనిని సూచిస్తుంది? అది అతనికి ఎలా సహాయపడుతుంది?<br>
+                <strong>సమాధానం:</strong> 'ఇది' నిక్ ఎడమ తుంటిపై ఉన్న చిన్న పాదాన్ని సూచిస్తుంది[cite: 1]. ఇది సమతుల్యతను కాపాడుకోవడానికి, తన్నడానికి, టైప్ చేయడానికి, కలంతో రాయడానికి సహాయపడుతుంది[cite: 1].<br><br>
+                2. వివాహం చేసుకోవడానికి 'సరైన అమ్మాయి/అబ్బాయి' అంటే ఏమిటి?<br>
+                <strong>సమాధానం:</strong> భావసారూప్యత కలిగి ఉండి, పరస్పర గౌరవాన్ని ఇస్తూ, ఎలాంటి షరతులు లేకుండా అంగీకరించే ఆదర్శవంతమైన జీవిత భాగస్వామి అని అర్థం.<br><br>
+                3. నిక్ స్వతంత్రంగా మారడానికి అతని తల్లిదండ్రులు ఎలా సహాయపడ్డారు?<br>
+                <strong>సమాధానం:</strong> అతని తండ్రి 18 నెలల వయసులో ఈత కొట్టడం మరియు ఆరేళ్ల వయసులో టైప్ చేయడం నేర్పించారు[cite: 1]. అతని తల్లి కలం పట్టుకోవడానికి ప్రత్యేక పరికరాన్ని కనుగొన్నారు[cite: 1], మరియు సాధారణ పాఠశాలలో చేర్పించారు[cite: 1].
+            </div>
+        </div>
+
+        <!-- Vocabulary & Attributes Table Section -->
+        <div id="attributes" class="card">
+            <h2>5. Vocabulary: Nick's Attributes Table (Pages 9-10)</h2>
+            <div class="english-text">
+                Matching adjectives describing Nick with examples from the text[cite: 1].
+            </div>
+            <table>
+                <tr>
+                    <th>Attribute</th>
+                    <th>Example from the text</th>
+                </tr>
+                <tr>
+                    <td>Positive</td>
+                    <td>In spite of his disability he has become great[cite: 1].</td>
+                </tr>
+                <tr>
+                    <td>Courageous</td>
+                    <td>He learned how to surf despite being terrified at first[cite: 1].</td>
+                </tr>
+                <tr>
+                    <td>Optimistic</td>
+                    <td>He decided to be thankful for what he has, not angry about what he lacks[cite: 1].</td>
+                </tr>
+                <tr>
+                    <td>Independent</td>
+                    <td>He achieved a degree in Financial Planning and Real Estate[cite: 1].</td>
+                </tr>
+                <tr>
+                    <td>Creative</td>
+                    <td>His mother invented a special plastic device so he could hold a pen[cite: 1].</td>
+                </tr>
+            </table>
+            <button class="translate-btn" onclick="toggleTranslation('tel-table', this)">తెలుగు అనువాదం చూడండి (Show Telugu Translation)</button>
+            <div id="tel-table" class="telugu-box">
+                <strong>తెలుగు భావము:</strong> నిక్ యొక్క లక్షణాలను వివరించే విశేషణాలను పాఠం నుండి ఉదాహరణలతో జతపరచడం[cite: 1].<br>
+                - సానుకూలత: అంగవైకల్యం ఉన్నప్పటికీ గొప్పవాడయ్యాడు[cite: 1].<br>
+                - ధైర్యం: మొదట్లో భయపడినప్పటికీ సర్ఫింగ్ నేర్చుకున్నాడు[cite: 1].<br>
+                - ఆశావాదం: లేని దాని గురించి కోప్పడకుండా ఉన్నదానికి కృతజ్ఞుడిగా ఉండాలని నిర్ణయించుకున్నాడు[cite: 1].
+            </div>
+        </div>
+
+        <!-- Grammar Section -->
+        <div id="grammar" class="card">
+            <h2>6. Grammar: Defining and Non-defining Relative Clauses (Page 11)</h2>
+            <div class="english-text">
+                A defining relative clause defines a noun, while a non-defining relative clause adds extra information and is enclosed by commas or hyphens[cite: 1].<br>
+                <em>Example:</em> The brave 26-year-old -- who is mainly a torso -- plays football and golf[cite: 1].
+            </div>
+            <button class="translate-btn" onclick="toggleTranslation('tel-gram', this)">తెలుగు అనువాదం చూడండి (Show Telugu Translation)</button>
+            <div id="tel-gram" class="telugu-box">
+                <strong>తెలుగు భావము:</strong> డిఫైనింగ్ రిలేటివ్ క్లాజ్ ఒక నామవాచకాన్ని ఖచ్చితంగా గుర్తిస్తుంది, అయితే నాన్-డిఫైనింగ్ రిలేటివ్ క్లాజ్ అదనపు సమాచారాన్ని అందిస్తుంది మరియు కామాలు లేదా హైఫన్‌ల ద్వారా వేరు చేయబడుతుంది[cite: 1].<br>
+                ఉదాహరణకు: ధైర్యశాలి అయిన 26 ఏళ్ల యువకుడు - ప్రధానంగా మొండెం మాత్రమే ఉన్నవాడు - ఫుట్‌బాల్ మరియు గోల్ఫ్ ఆడుతాడు[cite: 1].
+            </div>
+        </div>
+
+        <!-- Writing Section -->
+        <div id="writing" class="card">
+            <h2>7. Writing: Biographical Sketch of Stephen Hawking (Page 12)</h2>
+            <div class="english-text">
+                Stephen Hawking was born on January 8, 1942, in Oxford, England[cite: 1]. He overcame ALS, researched black holes, discovered Hawking Radiation, and received numerous global honors like the Albert Einstein Award[cite: 1].
+            </div>
+            <button class="translate-btn" onclick="toggleTranslation('tel-write', this)">తెలుగు అనువాదం చూడండి (Show Telugu Translation)</button>
+            <div id="tel-write" class="telugu-box">
+                <strong>తెలుగు భావము:</strong> స్టీఫెన్ హాకింగ్ జనవరి 8, 1942న ఇంగ్లాండ్‌లోని ఆక్స్‌ఫర్డ్‌లో జన్మించారు[cite: 1]. ఆయన ఏఎల్‌ఎస్ (ALS) వ్యాధిని ఎదుర్కొంటూనే, బ్లాక్ హోల్స్ పై పరిశోధనలు చేసి, హాకింగ్ రేడియేషన్‌ను కనుగొన్నారు మరియు ఆల్బర్ట్ ఐన్‌స్టీన్ అవార్డు వంటి అనేక ప్రపంచ స్థాయి సత్కారాలను పొందారు[cite: 1].
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Top Button -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top ⇧</button>
+
+    <footer>
+        <p>&copy; 2026 Class X English Complete Study Guide. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleTranslation(id, btn) {
+            const box = document.getElementById(id);
+            if (box.classList.contains('show')) {
+                box.classList.remove('show');
+                btn.innerText = "తెలుగు అనువాదం చూడండి (Show Telugu Translation)";
+            } else {
+                box.classList.add('show');
+                btn.innerText = "అనువాదాన్ని దాచు (Hide Telugu Translation)";
+            }
+        }
+
+        let mybutton = document.getElementById("topBtn");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
